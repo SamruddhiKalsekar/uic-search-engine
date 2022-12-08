@@ -90,8 +90,10 @@ def crawler():
             print("Connection failed for", link)
             continue
         
-    with open('url.pickle', 'wb') as f:
-        pickle.dump(pagesCrawled, text)
+    pickle_folder = "./PickleFiles/"
+    os.makedirs(pickle_folder, exist_ok=True)
+    with open(pickle_folder +'url.pickle', 'wb') as f:
+        pickle.dump(pagesCrawled, f)
         
                 
 crawler()
