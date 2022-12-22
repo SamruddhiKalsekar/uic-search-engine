@@ -1,7 +1,0 @@
-uic cs
-research
-graduate 
-resources
-Library
-uic maps
-Health

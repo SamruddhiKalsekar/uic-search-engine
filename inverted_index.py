@@ -8,6 +8,7 @@ def inverted_index(dictionary):
             if word in v:                                          #if token from total_vocab exists in a doc
                 wordfreq = v.count(word)                           #count the frequency it appears in the doc
                 inv_index.setdefault(word, {}).update({int(k): wordfreq}) 
+    print(inv_index)
     return inv_index                                               #update dictionary{token:{docid : wordfreq}}
             
 
